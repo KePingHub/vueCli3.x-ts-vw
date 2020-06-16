@@ -1,0 +1,8 @@
+@import "mixin/setOnepx.less";
+@import "./variable/color.less";
+
+each(@borderColors, {
+  .new1pxBorder(e("bd-1px-@{value}"), @value);
+});
+
+.new1pxBorderBdr(e("bd-1px-@{orange}"), @orange, 60px 120px 180px);
